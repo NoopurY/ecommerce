@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-yellow-50">
+    <!-- Navbar -->
+    <nav class="bg-gray-600 shadow-md p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-white">MyShop</h1>
+      <input
+        type="text"
+        placeholder="Search..."
+        class="border p-2 rounded-md w-1/3"
+      />
+      <div>
+        <a href="#cart" class="px-4 py-2 bg-gray-900 text-white rounded-md"
+          >Cart</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="bg-gradient-to-r from-yellow-300 to-pink-300 animate-gradient text-black text-center py-16"
+    >
+      <h2 class="text-4xl font-bold">Welcome to MyShop</h2>
+      <p class="text-lg mt-2">Best products at amazing prices</p>
+    </header>
+
+    <style>
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .animate-gradient {
+        background-size: 200% 200%;
+        animation: gradientAnimation 3s infinite alternate ease-in-out;
+      }
+    </style>
+
+    <!-- Product Listing -->
+    <section id="products" class="p-6">
+      <h2 class="text-3xl font-bold text-center mb-6">Featured Products</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- Product Card -->
+        <div class="bg-teal-100 p-4 shadow-md rounded-lg">
+          <div class="h-40 bg-gray-100 flex items-center justify-center">
+            <img
+              src="https://www.bataindustrials.com/wp-content/uploads/2024/02/N2SM0PE2210-enduro-act220-01-main.png"
+              alt=""
+            />
+          </div>
+          <h3 class="text-xl font-bold mt-4">Leather shoes</h3>
+          <p class="text-gray-600"><b>₹999</b></p>
+          <button class="mt-2 w-full bg-blue-500 text-white py-2 rounded-md">
+            Add to Cart
+          </button>
+        </div>
+        <div class="bg-teal-100 p-4 shadow-md rounded-lg">
+          <div class="h-40 bg-gray-100 flex items-center justify-center">
+            <img
+              src="https://www.bataindustrials.com/wp-content/uploads/2024/02/N6LMKPE2253-enduro-act256-01-main.png"
+              alt=""
+            />
+          </div>
+          <h3 class="text-xl font-bold mt-4">White dunks</h3>
+          <p class="text-gray-600"><b>₹1999</b></p>
+          <button class="mt-2 w-full bg-blue-500 text-white py-2 rounded-md">
+            Add to Cart
+          </button>
+        </div>
+        <!-- Repeat the above block for more products -->
+        <div class="bg-teal-100 p-4 shadow-md rounded-lg">
+          <div class="h-40 bg-gray-100 flex items-center justify-center">
+            <img
+              src="https://www.bataindustrials.com/wp-content/uploads/2019/12/7556647500-mammoet-anchor-01-main-1000x1000-1.png"
+              alt=""
+            />
+          </div>
+          <h3 class="text-xl font-bold mt-4">High-top Shoes</h3>
+          <p class="text-gray-600"><b>₹1499</b></p>
+          <button class="mt-2 w-full bg-blue-500 text-white py-2 rounded-md">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex flex-col">
+      <section
+        id="product-detail"
+        class="p-6 bg-orange-200 shadow-md max-w-4xl mx-auto mt-10 rounded-lg"
+      >
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="w-full md:w-1/2 h-64 bg-gray-100 flex items-center justify-center"
+          >
+            <img
+              src="https://www.bataindustrials.com/wp-content/uploads/2024/02/N2SM0PE2210-enduro-act220-01-main.png"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2 p-6">
+            <h2 class="text-3xl font-bold">Leather Shoes</h2>
+            <p class="text-gray-600 mt-2"><b>₹999</b></p>
+            <p class="mt-4">
+              These are one of the mindblowing pairs from our collection
+            </p>
+            <button class="mt-4 bg-blue-500 text-white px-6 py-2 rounded-md">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="product-detail"
+        class="p-6 bg-orange-200 shadow-md max-w-4xl mx-auto mt-10 rounded-lg"
+      >
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="w-full md:w-1/2 h-64 bg-gray-100 flex items-center justify-center"
+          >
+            <img
+              src="https://www.bataindustrials.com/wp-content/uploads/2024/02/N6LMKPE2253-enduro-act256-01-main.png"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2 p-6">
+            <h2 class="text-3xl font-bold">White Dunks</h2>
+            <p class="text-gray-600 mt-2"><b>₹1999</b></p>
+            <p class="mt-4">
+              These are one of the mindblowing pairs from our collection
+            </p>
+            <button class="mt-4 bg-red-700 text-white px-6 py-2 rounded-md">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="product-detail"
+        class="p-6 bg-orange-200 shadow-md max-w-4xl mx-auto mt-10 rounded-lg"
+      >
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="w-full md:w-1/2 h-64 bg-gray-100 flex items-center justify-center"
+          >
+            <img
+              src="https://www.bataindustrials.com/wp-content/uploads/2019/12/7556647500-mammoet-anchor-01-main-1000x1000-1.png"
+              alt=""
+            />
+          </div>
+          <div class="md:w-1/2 p-6">
+            <h2 class="text-3xl font-bold">High-top Shoes</h2>
+            <p class="text-gray-600 mt-2"><b>₹1299</b></p>
+            <p class="mt-4">
+              These are one of the mindblowing pairs from our collection
+            </p>
+            <button class="mt-4 bg-red-700 text-white px-6 py-2 rounded-md">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Cart Page -->
+    <section
+      id="cart"
+      class="p-6 mt-10 bg-white shadow-md max-w-4xl mx-auto rounded-lg"
+    >
+      <h2 class="text-3xl font-bold">Your Cart</h2>
+      <div class="flex justify-between items-center mt-4 border-b pb-2">
+        <div class="flex items-center">
+          <div class="w-16 h-16 bg-gray-300 flex items-center justify-center">
+            <img
+              src="https://www.bataindustrials.com/wp-content/uploads/2024/02/N2SM0PE2210-enduro-act220-01-main.png"
+              alt=""
+            />
+          </div>
+          <p class="ml-4">Leather Shoes- <b>₹999</b></p>
+        </div>
+        <button class="text-red-500">Remove</button>
+      </div>
+      <p class="mt-4 text-lg font-bold">Total: <b>₹999</b></p>
+      <a
+        href="#checkout"
+        class="block mt-4 text-center bg-green-500 text-white py-2 rounded-md"
+        >Checkout</a
+      >
+    </section>
+
+    <!-- Checkout Page -->
+    <section
+      id="checkout"
+      class="p-6 mt-10 bg-yellow-200 shadow-md max-w-4xl mx-auto rounded-lg"
+    >
+      <h2 class="text-3xl font-bold">Checkout</h2>
+      <form class="mt-4">
+        <label class="block">Full Name</label>
+        <input
+          type="text"
+          class="w-full border p-2 rounded-md mb-4"
+          placeholder="John Doe"
+        />
+
+        <label class="block">Address</label>
+        <input
+          type="text"
+          class="w-full border p-2 rounded-md mb-4"
+          placeholder="123 Street, City"
+        />
+
+        <label class="block">Payment Method</label>
+        <select class="w-full border p-2 rounded-md mb-4">
+          <option>Credit Card</option>
+          <option>Gpay</option>
+          <option>Cash on Delivery</option>
+        </select>
+
+        <button class="w-full bg-orange-300 text-black py-2 rounded-md">
+          Place Order
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+      <p>&copy; 2025 MyShop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
